@@ -84,10 +84,10 @@
 	body {
 		height: 100%;
 		background-color: #ffffff;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
 		background-repeat: repeat,			no-repeat,			no-repeat;
 		background-size: 100px 100px, cover,				cover;
 		background-position: top left,		center center,		bottom center;
@@ -105,10 +105,10 @@
 			opacity: 0;
 			z-index: 1;
 			background-color: #ffffff;
-			background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
-			background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
-			background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
-			background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+			background-image: url("images/overlay.png");
+			background-image: url("images/overlay.png");
+			background-image: url("images/overlay.png");
+			background-image: url("images/overlay.png");
 			background-repeat: repeat,			no-repeat;
 			background-size: 100px 100px, cover;
 			background-position: top left,		center center;
@@ -168,7 +168,7 @@
 		}
 
 		a:hover {
-			color: #ff7496;
+			color: #045DFF;
 		}
 
 	strong, b {
@@ -242,7 +242,7 @@
 
 	hr {
 		border: 0;
-		border-bottom: solid 1px #c8cccf;
+		border-bottom: solid 1px #045DFF;
 		margin: 3em 0;
 	}
 
@@ -278,7 +278,7 @@
 		-ms-appearance: none;
 		appearance: none;
 		border-radius: 4px;
-		border: solid 1px #c8cccf;
+		border: solid 1px #045DFF;
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -302,7 +302,7 @@
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #ff7496;
+			border-color: #00BF44;
 		}
 
 	.select-wrapper {
@@ -322,7 +322,7 @@
 		}
 
 		.select-wrapper:before {
-			color: #c8cccf;
+			color: #045DFF;
 			display: block;
 			height: 2.75em;
 			line-height: 2.75em;
@@ -389,7 +389,7 @@
 			input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
 				border-radius: 4px;
-				border: solid 1px #c8cccf;
+				border: solid 1px #045DFF;
 				content: '';
 				display: inline-block;
 				height: 1.65em;
@@ -403,13 +403,13 @@
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			color: #ff7496;
+			color: #00BF44;
 			content: '\f00c';
 		}
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #ff7496;
+			border-color: #00BF44;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -494,7 +494,7 @@
 		}
 
 			ul.alt li {
-				border-top: solid 1px #c8cccf;
+				border-top: solid 1px #045DFF;
 				padding: 0.5em 0;
 			}
 
@@ -522,7 +522,7 @@
 					width: 3.75em;
 					height: 3.75em;
 					border-radius: 100%;
-					border: solid 1px #c8cccf;
+					border: solid 1px #045DFF;
 					line-height: 3.75em;
 					overflow: hidden;
 					text-align: center;
@@ -541,11 +541,11 @@
 
 					ul.icons li a:before {
 						color: #ffffff;
-						text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
+						text-shadow: 1.25px 0px 0px #045DFF, -1.25px 0px 0px #045DFF, 0px 1.25px 0px #045DFF, 0px -1.25px 0px #045DFF;
 					}
 
 					ul.icons li a:hover:before {
-						text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496, 0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496;
+						text-shadow: 1.25px 0px 0px #00BF44, -1.25px 0px 0px #00BF44, 0px 1.25px 0px #00BF44, 0px -1.25px 0px #00BF44;
 					}
 
 					ul.icons li a:before {
@@ -561,7 +561,7 @@
 					}
 
 					ul.icons li a:hover {
-						border-color: #ff7496;
+						border-color: #00BF44;
 					}
 
 			@media screen and (max-width: 480px) {
@@ -622,7 +622,7 @@
 		padding: 0 1.5em;
 		background-color: transparent;
 		border-radius: 4px;
-		border: solid 1px #c8cccf;
+		border: solid 1px #045DFF;
 		color: #414f57 !important;
 		cursor: pointer;
 		text-align: center;
@@ -635,8 +635,8 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			border-color: #ff7496;
-			color: #ff7496 !important;
+			border-color: #00BF44;
+			color: #00BF44 !important;
 		}
 
 		input[type="submit"].icon,
@@ -745,7 +745,7 @@
 				width: calc(100% + 6em);
 				height: 1px;
 				z-index: -1;
-				background: #c8cccf;
+				background: #045DFF;
 			}
 
 		@media screen and (max-width: 480px) {
