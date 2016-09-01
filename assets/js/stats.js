@@ -6,7 +6,12 @@ function getProfileData() {
   return new Promise(function(resolve, reject) {
     requestAPI('https://api.github.com/users/luchanso')
       .then(resolve)
-      .catch(reject);
+      .catch(function() {
+        resolve({
+          'public_repos': '70+',
+          'created_at': '5 Aug 2012'
+        });
+      });
   });
 }
 
@@ -18,7 +23,11 @@ function getListOfOrganization() {
   return new Promise(function(resolve, reject) {
     requestAPI('https://api.github.com/users/luchanso/orgs')
       .then(resolve)
-      .catch(reject);
+      .catch(function() {
+        resolve({
+          length: '6+'
+        });
+      });
   });
 }
 
@@ -40,6 +49,7 @@ function requestAPI(url) {
        reject(xhr);
      }
     };
+    xhr.onerror = reject;
     xhr.open("GET", url, true);
     xhr.send();
   });
