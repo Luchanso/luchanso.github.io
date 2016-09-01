@@ -23,7 +23,7 @@ function getListOfOrganization() {
   return new Promise(function(resolve, reject) {
     requestAPI('https://api.github.com/users/luchanso/orgs')
       .then(resolve)
-      .catch(function() {
+      .catch(function(data) {
         resolve({
           length: '6+'
         });
@@ -36,7 +36,7 @@ function requestAPI(url) {
     var cache = getChache(url);
 
     if (cache) {
-        return cache;
+        return resolve(cache);
     }
 
     var xhr = new XMLHttpRequest();
@@ -56,11 +56,16 @@ function requestAPI(url) {
 }
 
 function cacheResult(url, data) {
-  localStorage["cache_" + url] = data;
+  localStorage["cache_" + url] = JSON.stringify({data:data});
 }
 
 function getChache(url) {
-  return localStorage["cache_" + url];
+  var rowData = localStorage["cache_" + url];
+  if (!rowData) {
+    return rowData;
+  } else {
+    return JSON.parse(rowData).data;
+  }
 }
 
 function updateElement(id, text) {
