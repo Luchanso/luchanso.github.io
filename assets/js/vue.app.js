@@ -8,11 +8,13 @@ new Vue({
     minutes: 0,
     seconds: 0,
     milliseconds: 0,
+    nano: 0,
   },
 
   methods: {
     update: function() {
       let calculated = Date.now() - this.startTime.getTime();
+      this.nano = Math.round(Math.random() * 1000)
       this.milliseconds = calculated % 1000;
       this.seconds = Math.floor(calculated / 1000) % 60;
       this.minutes = Math.floor(calculated / 1000 / 60) % 60;
