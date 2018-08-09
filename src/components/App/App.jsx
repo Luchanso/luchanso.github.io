@@ -27,13 +27,19 @@ const Name = styled.h1`
   color: red;
 `;
 
+const Muted = styled.p`
+  color: #9e9e9e;
+`;
+
 class App extends Component {
   render() {
     return (
       <Root>
         <TextBlock>
-          I'm <Name>Loutchansky Oleg</Name>
+          I'm
+          <Name>Loutchansky Oleg</Name>
           Software engineer
+          <Muted>Site in development</Muted>
         </TextBlock>
       </Root>
     );
