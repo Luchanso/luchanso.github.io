@@ -1,6 +1,6 @@
 {
-  "name": "site",
-  "version": "0.1.0",
+  "name": "luchanso-site",
+  "version": "1.0.0",
   "private": true,
   "homepage": "https://luchanso.github.io",
   "dependencies": {
