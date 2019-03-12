@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import styled, { injectGlobal } from "styled-components";
-import backgroundImageUrl from "./background.png";
+import backgroundImageUrl from "./background.jpg";
+import backgroundImageUrl90 from "./background-90.jpg";
+import backgroundImageUrl80 from "./background-80.jpg";
 
 injectGlobal`
   body {
@@ -13,13 +15,21 @@ const Root = styled.div`
   flex-wrap: wrap;
   height: 100vh;
   align-items: center;
-  background: url("${backgroundImageUrl}");
+  background-image: url("${backgroundImageUrl}");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media screen and (max-width: 767px) {
     justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1366px) {
+    background-image: url("${backgroundImageUrl90}");
+  }
+
+  @media screen and (max-width: 768px) {
+    background-image: url("${backgroundImageUrl80}");
   }
 `;
 
