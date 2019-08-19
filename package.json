@@ -5,7 +5,7 @@
   "license": "MIT",
   "homepage": "https://luchanso.github.io",
   "dependencies": {
-    "gh-pages": "2.1.0",
+    "gh-pages": "2.1.1",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-scripts": "3.1.1",
