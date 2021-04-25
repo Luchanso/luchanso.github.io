@@ -87,9 +87,9 @@ const Copyright = styled.p`
   }
 `;
 
-const AlfabankLink = () => (
-  <DescriptionLink href="https://alfabank.ru" target="_blank" rel="noopener">
-    alfabank.ru
+const VtbLink = () => (
+  <DescriptionLink href="https://vtb.ru" target="_blank" rel="noopener">
+    vtb.ru
   </DescriptionLink>
 );
 
@@ -148,7 +148,7 @@ export class App extends Component {
           Hi, I'm @luchanso
           <Name>Loutchansky Oleg</Name>
           <Description>
-            Software engineer at <AlfabankLink />
+            Software engineer at <VtbLink />
           </Description>
         </TextBlock>
         <Copyright>Mandelbrot by Daniel White</Copyright>
