@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import styled, { injectGlobal } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import backgroundImageUrl from "./background.jpg";
 import backgroundImageUrl90 from "./background-90.jpg";
 import backgroundImageUrl80 from "./background-80.jpg";
 
-injectGlobal`
+const GlobalStyles = createGlobalStyle`
   body {
     font-family: Roboto;
   }
@@ -143,6 +143,7 @@ export class App extends Component {
   render() {
     return (
       <Root>
+        <GlobalStyles />
         <BackgroundShadow />
         <TextBlock>
           Hi, I'm @luchanso
