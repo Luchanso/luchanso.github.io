@@ -157,8 +157,8 @@ export class App extends Component {
           <SocietyLink href="https://fb.com/oleg.loutchansky">
             <i className="fab fa-facebook-f" />
           </SocietyLink>
-          <SocietyLink href="https://vk.com/loutchansky">
-            <i className="fab fa-vk" />
+          <SocietyLink href="https://twitter.com/luchanso">
+            <i className="fab fa-twitter" />
           </SocietyLink>
           <SocietyLink href="https://www.instagram.com/luchanso/">
             <i className="fab fa-instagram" />
