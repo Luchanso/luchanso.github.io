@@ -88,8 +88,8 @@ const Copyright = styled.p`
 `;
 
 const VtbLink = () => (
-  <DescriptionLink href="https://vtb.ru" target="_blank" rel="noopener">
-    vtb.ru
+  <DescriptionLink href="https://inno.tech/en" target="_blank" rel="noopener">
+    inno.tech
   </DescriptionLink>
 );
 
