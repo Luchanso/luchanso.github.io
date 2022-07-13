@@ -111,7 +111,8 @@ module.exports = {
             query: `
               {
                 allMdx(
-                  sort: { order: DESC, fields: [frontmatter___date], filter: { frontmatter: { hidden: { ne: true } } } },
+                  filter: { frontmatter: { hidden: { ne: true } } },
+                  sort: { order: DESC, fields: [frontmatter___date] },
                 ) {
                   nodes {
                     excerpt
