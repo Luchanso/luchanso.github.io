@@ -1,14 +1,14 @@
 module.exports = {
   graphqlTypegen: true,
-  pathPrefix: "/blog",
+  pathPrefix: "/",
   siteMetadata: {
-    title: `Fastup Kit Blog`,
-    copyright: "Fastup Kit",
+    title: `Blog`,
+    copyright: "Luchanskii Oleg",
     author: {
       name: `Luchanskii Oleg`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://fastup-kit.github.io/blog/`,
+    description: `Luchanskii Oleg personal Site`,
+    siteUrl: `https://luchanso.github.io/`,
     social: {
       twitter: `luchanso`,
     },
@@ -78,6 +78,8 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-fontawesome-css`,
+    "gatsby-plugin-emotion",
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -109,7 +111,7 @@ module.exports = {
             query: `
               {
                 allMdx(
-                  sort: { order: DESC, fields: [frontmatter___date] },
+                  sort: { order: DESC, fields: [frontmatter___date], filter: { frontmatter: { hidden: { ne: true } } } },
                 ) {
                   nodes {
                     excerpt
@@ -124,7 +126,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "Luchanskii Oleg Blog RSS Feed",
           },
         ],
       },
@@ -132,10 +134,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
+        name: `Luchanskii Oleg Blog`,
         short_name: `GatsbyJS`,
         start_url: `/`,
-        background_color: `#ffffff`,
+        background_color: `#000000`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,

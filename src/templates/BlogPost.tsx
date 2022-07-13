@@ -59,7 +59,7 @@ const BlogPostTemplate = ({
             <Flex mb="4">
               <Box mr="4">
                 <StaticImage
-                  src="../images/profile-pic.png"
+                  src="../images/oleg.jpg"
                   alt=""
                   height={48}
                   style={{
