@@ -7,6 +7,7 @@ import { Box, Container } from "@chakra-ui/react";
 import { TopPost } from "../components/TopPost";
 import { PostListItem } from "../components/PostListItem";
 import { LastPosts } from "../components/LastPosts";
+import { Hero } from "../components/Hero/Hero";
 
 const BlogIndex = ({ data, location }: PageProps<Queries.Query>) => {
   const siteTitle = data.site?.siteMetadata?.title;
@@ -30,16 +31,20 @@ const BlogIndex = ({ data, location }: PageProps<Queries.Query>) => {
 
   if (allPosts.length === 0) {
     return (
-      <Layout location={location} title={siteTitle}>
+      <>
         <Seo title="All posts" />
-        <p>No blog posts found. Add markdown posts to "content/blog"</p>
-      </Layout>
+        <Hero />
+        <Layout location={location} title={siteTitle}>
+          <p>No blog posts found.</p>
+        </Layout>
+      </>
     );
   }
 
   return (
     <>
       <Seo title="All posts" />
+      <Hero />
       <Layout location={location} title={siteTitle}>
         {favorite && <TopPost post={favorite} />}
         <Box my="16">

@@ -25,7 +25,7 @@ const Seo = ({
   description = "",
   lang,
   meta = [],
-  title = "DatPayments Blog",
+  title = "Oleg Luchanskii Blog",
 }: Props) => {
   const { site } = useStaticQuery<Queries.Query>(
     graphql`
