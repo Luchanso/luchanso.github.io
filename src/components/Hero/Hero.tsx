@@ -21,44 +21,50 @@ export const Hero = () => {
           }
         `}
       />
-      <Flex height="100vh" minH="960px" justifyContent="center">
+      <Flex height="100vh" minH={["initial", "960px"]} justifyContent="center">
         <Flex
-          h="100vh"
+          h={["initial", "100vh"]}
           position="relative"
-          justifyContent="center"
+          justifyContent={["start", "center"]}
           flexDirection="column"
           maxW="1512px"
           width="100vw"
-          pl={32}
+          pt={["4", "0"]}
+          pl={["4", "12", "32"]}
         >
           <Flex
             position="absolute"
             top="0"
             left="0"
             height="100vh"
-            minHeight="960px"
+            minHeight={["initial", "960px"]}
+            flexDirection={["column", "row"]}
           >
-            <StaticImage
-              css={css`
-                width: 35%;
-                opacity: 0.25;
-              `}
-              loading="eager"
-              src="../../images/tea.jpg"
-              alt="Tea"
-            />
-            <StaticImage
-              css={css`
-                width: 65%;
-              `}
-              loading="eager"
-              src="../../images/oleg.jpg"
-              alt="Oleg Luchanskii"
-            />
+            <Box w={["100%", "35%"]} h={["320px", "initial"]}>
+              <StaticImage
+                css={css`
+                  opacity: 0.25;
+                  height: 100%;
+                `}
+                loading="eager"
+                src="../../images/tea.jpg"
+                alt="Tea"
+              />
+            </Box>
+            <Box w={["100%", "65%"]}>
+              <StaticImage
+                css={css`
+                  height: 100%;
+                `}
+                loading="eager"
+                src="../../images/oleg.jpg"
+                alt="Oleg Luchanskii"
+              />
+            </Box>
           </Flex>
           <Box zIndex={1}>
             <Text color="white">Hi, i'm @Luchanso</Text>
-            <Heading as="h1" fontSize="120px" color="white">
+            <Heading as="h1" fontSize={["56px", "64px", "120px"]} color="white">
               Oleg
               <br />
               Luchanskii
