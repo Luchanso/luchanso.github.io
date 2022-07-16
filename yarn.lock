@@ -2722,7 +2722,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortawesome/fontawesome-svg-core@npm:^6.1.1":
+"@fortawesome/fontawesome-svg-core@npm:6.1.1":
   version: 6.1.1
   resolution: "@fortawesome/fontawesome-svg-core@npm:6.1.1"
   dependencies:
@@ -2731,7 +2731,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortawesome/free-brands-svg-icons@npm:^6.1.1":
+"@fortawesome/free-brands-svg-icons@npm:6.1.1":
   version: 6.1.1
   resolution: "@fortawesome/free-brands-svg-icons@npm:6.1.1"
   dependencies:
@@ -2740,7 +2740,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortawesome/free-solid-svg-icons@npm:^6.1.1":
+"@fortawesome/free-solid-svg-icons@npm:6.1.1":
   version: 6.1.1
   resolution: "@fortawesome/free-solid-svg-icons@npm:6.1.1"
   dependencies:
@@ -2749,7 +2749,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortawesome/react-fontawesome@npm:^0.2.0":
+"@fortawesome/react-fontawesome@npm:0.2.0":
   version: 0.2.0
   resolution: "@fortawesome/react-fontawesome@npm:0.2.0"
   dependencies:
@@ -10285,10 +10285,10 @@ __metadata:
     "@chakra-ui/react": 2.2.4
     "@emotion/react": 11.9.3
     "@emotion/styled": 11.9.3
-    "@fortawesome/fontawesome-svg-core": ^6.1.1
-    "@fortawesome/free-brands-svg-icons": ^6.1.1
-    "@fortawesome/free-solid-svg-icons": ^6.1.1
-    "@fortawesome/react-fontawesome": ^0.2.0
+    "@fortawesome/fontawesome-svg-core": 6.1.1
+    "@fortawesome/free-brands-svg-icons": 6.1.1
+    "@fortawesome/free-solid-svg-icons": 6.1.1
+    "@fortawesome/react-fontawesome": 0.2.0
     "@mdx-js/mdx": 1.6.22
     "@mdx-js/react": 1.6.22
     "@types/mdx-js__react": 1.5.5
