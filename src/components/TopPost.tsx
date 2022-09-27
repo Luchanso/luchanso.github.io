@@ -17,7 +17,7 @@ export function TopPost({ post }: Props) {
   const link = post.slug || "";
 
   return (
-    <Grid templateColumns="1fr 1fr" gap="8" bg="">
+    <Grid templateColumns={["1fr", "1fr 1fr"]} gap="8" bg="">
       <Box>
         <Link as={RouterLink} to={link}>
           <Box rounded="xl" overflow="hidden">
@@ -35,11 +35,15 @@ export function TopPost({ post }: Props) {
       </Box>
       <Flex flexDir="column" justifyContent="space-around">
         <Link as={RouterLink} to={link}>
-          <Heading as="h2" size="4xl" lineHeight="1.24">
+          <Heading as="h2" size={["lg", "2xl"]} lineHeight="1.24" mb="2">
             {title}
           </Heading>
         </Link>
-        {description && <Text fontSize="xl">{description}</Text>}
+        {description && (
+          <Text fontSize={["md", "xl"]} mb="2">
+            {description}
+          </Text>
+        )}
         <PostInfo post={post} />
       </Flex>
     </Grid>

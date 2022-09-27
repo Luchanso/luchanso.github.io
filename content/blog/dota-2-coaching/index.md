@@ -2,7 +2,7 @@
 title: Рефакторинг Dota 2 Assistant, часть 1
 date: "2022-07-25"
 description: "В этом посте будет про UI редизайн первой версии помощника Dota 2, а также про первое применение языка Rust и впечатления от него"
-favorite: true
+favorite: false
 heroImageFile: ./hero.jpg
 heroImageAlt: "UI Wireframe"
 tag: Development

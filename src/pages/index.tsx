@@ -32,7 +32,7 @@ const BlogIndex = ({ data, location }: PageProps<Queries.Query>) => {
   if (allPosts.length === 0) {
     return (
       <>
-        <Seo title="All posts" />
+        <Seo title="Oleg Luchanskii" />
         <Hero />
         <Layout location={location} title={siteTitle}>
           <p>No blog posts found.</p>
@@ -43,7 +43,7 @@ const BlogIndex = ({ data, location }: PageProps<Queries.Query>) => {
 
   return (
     <>
-      <Seo title="All posts" />
+      <Seo title="Oleg Luchanskii" />
       <Hero />
       <Layout location={location} title={siteTitle}>
         {favorite && <TopPost post={favorite} />}
