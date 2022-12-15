@@ -15,7 +15,7 @@ export const Products = () => {
       <Heading mb="4" textAlign="center">
         Products I have created
       </Heading>
-      <Grid templateColumns={["1fr", "1fr 1fr 1fr"]} gap="8">
+      <Grid templateColumns={["1fr", "1fr", "1fr 1fr", "1fr 1fr 1fr"]} gap="8">
         <Product
           link="https://mera.fit"
           title="Mera"
