@@ -8,6 +8,7 @@ import { TopPost } from "../components/TopPost";
 import { PostListItem } from "../components/PostListItem";
 import { LastPosts } from "../components/LastPosts";
 import { Hero } from "../components/Hero/Hero";
+import { Products } from "../components/Products/Products";
 
 const BlogIndex = ({ data, location }: PageProps<Queries.Query>) => {
   const siteTitle = data.site?.siteMetadata?.title;
@@ -45,6 +46,7 @@ const BlogIndex = ({ data, location }: PageProps<Queries.Query>) => {
     <>
       <Seo title="Oleg Luchanskii" />
       <Hero />
+      <Products />
       <Layout location={location} title={siteTitle}>
         {favorite && <TopPost post={favorite} />}
         <Box my="16">
