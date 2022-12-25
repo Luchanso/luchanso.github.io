@@ -1,5 +1,5 @@
-import { Box, Container, Grid, Heading } from "@chakra-ui/react";
-import React from "react";
+import { Container, Grid, Heading } from "@chakra-ui/react";
+import React, { forwardRef } from "react";
 import { Product } from "./Product";
 
 import mera from "./images/mera.png";
@@ -9,11 +9,11 @@ import vpn from "./images/vpn.png";
 import ph from "./images/ph.png";
 import fastup from "./images/fastup.png";
 
-export const Products = () => {
+export const Products = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <Container maxW="container.xl" my="32">
-      <Heading mb="4" textAlign="center">
-        Products I have created
+    <Container maxW="container.xl" my="32" ref={ref}>
+      <Heading my="8" textAlign="center">
+        Products I've created
       </Heading>
       <Grid templateColumns={["1fr", "1fr", "1fr 1fr", "1fr 1fr 1fr"]} gap="8">
         <Product
@@ -53,4 +53,4 @@ export const Products = () => {
       </Grid>
     </Container>
   );
-};
+});

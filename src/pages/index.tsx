@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useRef } from "react";
 import { graphql, PageProps } from "gatsby";
 
 import Layout from "../components/Layout";
@@ -16,6 +16,7 @@ const BlogIndex = ({ data, location }: PageProps<Queries.Query>) => {
   const posts: Queries.Mdx[] = [];
   const lastThree: Queries.Mdx[] = [];
   let favorite: Queries.Mdx | undefined;
+  const scrollToRef = useRef<HTMLDivElement | null>(null);
 
   allPosts.forEach((item) => {
     if (item.frontmatter?.favorite) {
@@ -34,7 +35,7 @@ const BlogIndex = ({ data, location }: PageProps<Queries.Query>) => {
     return (
       <>
         <Seo title="Oleg Luchanskii" />
-        <Hero />
+        <Hero scrollToRef={scrollToRef} />
         <Layout location={location} title={siteTitle}>
           <p>No blog posts found.</p>
         </Layout>
@@ -45,8 +46,8 @@ const BlogIndex = ({ data, location }: PageProps<Queries.Query>) => {
   return (
     <>
       <Seo title="Oleg Luchanskii" />
-      <Hero />
-      <Products />
+      <Hero scrollToRef={scrollToRef} />
+      <Products ref={scrollToRef} />
       <Layout location={location} title={siteTitle}>
         {favorite && <TopPost post={favorite} />}
         <Box my="16">
