@@ -114,7 +114,7 @@ export const Hero = ({ scrollToRef }: Props) => {
                 Luchanskii
               </Heading>
             </MotionBox>
-            {/* <MotionBox
+            <MotionBox
               transition={
                 {
                   duration: 0.5,
@@ -128,20 +128,27 @@ export const Hero = ({ scrollToRef }: Props) => {
             >
               <Box>
                 <LightMode>
-                  <Button
-                    color="black"
-                    mr={["0", "4"]}
-                    mb={["4", "0"]}
-                    w={["full", "initial"]}
+                  <Link
+                    href="https://github.com/Luchanso/resume/raw/master/Oleg%20Luchanskii%20Resume.pdf"
+                    _hover={{
+                      textDecor: "none",
+                    }}
                   >
-                    Resume Europe 🇪🇺
-                  </Button>
-                  <Button color="black" w={["full", "initial"]}>
+                    <Button
+                      color="black"
+                      mr={["0", "4"]}
+                      mb={["4", "0"]}
+                      w={["full", "initial"]}
+                    >
+                      Download Resume 📂
+                    </Button>
+                  </Link>
+                  {/* <Button color="black" w={["full", "initial"]}>
                     Resume US 🇺🇸
-                  </Button>
+                  </Button> */}
                 </LightMode>
               </Box>
-            </MotionBox> */}
+            </MotionBox>
             <MotionBox
               transition={
                 {
