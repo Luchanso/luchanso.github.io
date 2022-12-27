@@ -129,7 +129,7 @@ export const Hero = ({ scrollToRef }: Props) => {
               <Box>
                 <LightMode>
                   <Link
-                    href="https://github.com/Luchanso/resume/raw/master/Oleg%20Luchanskii%20Resume.pdf"
+                    href="https://github.com/Luchanso/resume/raw/master/eu/Oleg%20Luchanskii%20Resume.pdf"
                     _hover={{
                       textDecor: "none",
                     }}
@@ -140,12 +140,19 @@ export const Hero = ({ scrollToRef }: Props) => {
                       mb={["4", "0"]}
                       w={["full", "initial"]}
                     >
-                      Download Resume 📂
+                      Resume EU 🇪🇺
                     </Button>
                   </Link>
-                  {/* <Button color="black" w={["full", "initial"]}>
-                    Resume US 🇺🇸
-                  </Button> */}
+                  <Link
+                    href="https://github.com/Luchanso/resume/raw/master/us/Oleg%20Luchanskii%20Resume.pdf"
+                    _hover={{
+                      textDecor: "none",
+                    }}
+                  >
+                    <Button color="black" w={["full", "initial"]}>
+                      Resume US 🇺🇸
+                    </Button>
+                  </Link>
                 </LightMode>
               </Box>
             </MotionBox>
