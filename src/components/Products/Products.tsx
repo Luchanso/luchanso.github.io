@@ -17,12 +17,6 @@ export const Products = forwardRef<HTMLDivElement>((props, ref) => {
       </Heading>
       <Grid templateColumns={["1fr", "1fr", "1fr 1fr", "1fr 1fr 1fr"]} gap="8">
         <Product
-          link="https://mera.fit"
-          title="Mera"
-          icon={mera}
-          description="The place where you can find and book sports mentors all over the world"
-        />
-        <Product
           link="https://qadeck.vercel.app"
           title="Question Deck"
           icon={qa}
@@ -33,6 +27,11 @@ export const Products = forwardRef<HTMLDivElement>((props, ref) => {
           title="Twitter Blue Checkmark"
           icon={twitter}
           description="Make free twitter blue checkmark"
+        />
+        <Product
+          title="Mera"
+          icon={mera}
+          description="The place where you can find and book sports mentors all over the world"
         />
         <Product
           title="VPN"

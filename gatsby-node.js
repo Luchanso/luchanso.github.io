@@ -105,6 +105,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       heroImageFile: File @fileByRelativePath
       heroImageAlt: String
       hidden: Boolean
+      redirect: String
     }
 
     type MarkdownRemark implements Node {
@@ -122,6 +123,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       heroImageFile: File
       heroImageAlt: String
       hidden: Boolean
+      redirect: String
     }
 
     type Fields {

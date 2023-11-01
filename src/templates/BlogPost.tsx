@@ -24,6 +24,7 @@ const BlogPostTemplate = ({
   location,
 }: PageProps<Queries.BlogPostBySlugQuery>) => {
   const post = data.mdx;
+  const redirect = post?.frontmatter?.redirect;
   const siteTitle = data.site?.siteMetadata?.title || `Title`;
   const previous = data.previous as Queries.Mdx;
   const next = data.next as Queries.Mdx;
@@ -31,6 +32,13 @@ const BlogPostTemplate = ({
   const imgLink = post?.frontmatter?.heroImageLink;
   const imgFile =
     post?.frontmatter?.heroImageFile?.childImageSharp?.gatsbyImageData;
+
+  if (redirect) {
+    // @ts-ignore
+    window.location = redirect;
+
+    return null;
+  }
 
   if (hidden?.frontmatter?.hidden) {
     return (
@@ -148,6 +156,7 @@ export const pageQuery = graphql`
           }
         }
         heroImageAlt
+        redirect
       }
       timeToRead
     }

@@ -2,7 +2,7 @@
 title: How Gatsby, NodeJS, Rust can’t handle simple task 🦀
 date: "2022-09-27"
 description: "I needed to build an email subscription - just take email and put it in database. Thats all..."
-favorite: true
+favorite: false
 heroImageFile: ./hero.jpg
 heroImageAlt: "Cogs"
 tag: Development

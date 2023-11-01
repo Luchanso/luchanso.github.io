@@ -17,7 +17,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { isValidMotionProp, motion, Transition } from "framer-motion";
 import {
   faFacebook,
-  faTwitter,
   faInstagram,
   faGithub,
   faTelegram,
@@ -140,7 +139,7 @@ export const Hero = ({ scrollToRef }: Props) => {
                       mb={["4", "0"]}
                       w={["full", "initial"]}
                     >
-                      Resume EU 🇪🇺
+                      Resume EU
                     </Button>
                   </Link>
                   <Link
@@ -150,7 +149,7 @@ export const Hero = ({ scrollToRef }: Props) => {
                     }}
                   >
                     <Button color="black" w={["full", "initial"]}>
-                      Resume US 🇺🇸
+                      Resume US
                     </Button>
                   </Link>
                 </LightMode>
@@ -170,9 +169,6 @@ export const Hero = ({ scrollToRef }: Props) => {
               <HStack spacing="5">
                 <Link color="white" href="https://fb.com/oleg.loutchansky">
                   <FontAwesomeIcon icon={faFacebook} size="2x" />
-                </Link>
-                <Link color="white" href="https://twitter.com/luchanso">
-                  <FontAwesomeIcon icon={faTwitter} size="2x" />
                 </Link>
                 <Link color="white" href="https://www.instagram.com/luchanso/">
                   <FontAwesomeIcon icon={faInstagram} size="2x" />
