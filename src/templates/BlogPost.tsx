@@ -33,12 +33,13 @@ const BlogPostTemplate = ({
   const imgFile =
     post?.frontmatter?.heroImageFile?.childImageSharp?.gatsbyImageData;
 
-  if (redirect) {
-    // @ts-ignore
-    window.location = redirect;
+    React.useEffect(() => {
+      if (redirect) {
+        // @ts-ignore
+        window.location = redirect;
+      }
+    }, []);
 
-    return null;
-  }
 
   if (hidden?.frontmatter?.hidden) {
     return (
